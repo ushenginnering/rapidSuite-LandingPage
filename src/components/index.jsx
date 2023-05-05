@@ -1,0 +1,10 @@
+import Header from './Header';
+import Hero from './Hero';
+import Logo from './Logo';
+import Faqs from './Faqs';
+import Rapid from './Rapid';
+import Benefits from './Benefits';
+import Invest from './Invest';
+import Rep from './Rep';
+import Footer from './Footer';
+export { Header, Hero, Logo, Faqs, Rapid, Benefits, Invest, Rep, Footer };
