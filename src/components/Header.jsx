@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <header className={color ? 'header header-bg' : 'header'}>
-      <nav className=' flex items-center justify-between py-[20px] md:py-6 px-2 md:px-[37px]'>
+      <nav className=' flex items-center justify-between py-[20px] md:py-6 px-[10px] md:px-[37px]'>
         {/* logo */}
         <img src={logo} alt='Rapid logo' className='w-[54px] h-[38px]' />
 

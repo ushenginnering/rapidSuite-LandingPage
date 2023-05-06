@@ -24,6 +24,24 @@ body {
   background: rgb(1, 27, 51);
 }
 
+/* navbar text color */
+.text-gradient {
+  background-clip: text;
+}
+
+.text-gradient:hover {
+  background-image: linear-gradient(to right, #0ce37b, #1393ec);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-span {
+  background-clip: text;
+  background: linear-gradient(to right, #1393ec, #0ce37b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (min-width: 768px) {
   .header {
     position: fixed;
@@ -43,38 +61,14 @@ body {
 
   .hero-bg {
     background-image: url('./components/images/hero.png');
-    background-position: start;
-    background-repeat: repeat;
+    background-position: start center;
+    background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
   }
 }
 
-.text-gradient {
-  background-clip: text;
-}
-
-.text-gradient:hover {
-  background-image: linear-gradient(to right, #0ce37b, #1393ec);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero-span {
-  background-clip: text;
-  background: linear-gradient(to right, #1393ec, #0ce37b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* .logo-bg {
-  background-image: url('./components/images/hero-bg.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  
-} */
-
+/* faq text gradient */
 .faq-text {
   background: linear-gradient(90.51deg, #1393ec 16.81%, #ffffff 100.6%);
   -webkit-background-clip: text;
@@ -83,6 +77,7 @@ body {
   text-fill-color: transparent;
 }
 
+/* faq text gradient */
 .rapid-text {
   background: linear-gradient(93.15deg, #1393ec -12.14%, #ffffff 106.35%);
   -webkit-background-clip: text;
@@ -99,16 +94,7 @@ body {
   text-fill-color: transparent;
 }
 
-/* bar text */
-.bar {
-  background: linear-gradient(93.06deg, #0ce37b 6.35%, #ffffff 105.4%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
-/* school text */
+/* benefit 2nd article */
 .school {
   background: linear-gradient(100.92deg, #b2cd08 25.5%, #ffffff 104.89%);
   -webkit-background-clip: text;
@@ -117,6 +103,16 @@ body {
   text-fill-color: transparent;
 }
 
+/* benefit red article */
+.bar {
+  background: linear-gradient(93.06deg, #0ce37b 6.35%, #ffffff 105.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* invest */
 .invest-bg {
   background-image: url('./components/images/invest.png');
   background-position: start;
@@ -127,50 +123,6 @@ body {
   position: absolute;
   top: 30%;
   left: 76px;
-}
-
-@media (min-width: 1024px) {
-  .invest-bg {
-    background-image: url('./components/images/invest.png');
-    background-position: start;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 177px;
-    height: 146px;
-    position: absolute;
-    top: 40%;
-    left: 110px;
-  }
-}
-@media (min-width: 2560px) {
-  .invest-bg {
-    background-image: url('./components/images/invest.png');
-    /* background-position: start; */
-    /* background-repeat: no-repeat; */
-    /* background-size: contain; */
-    /* width: 177px; */
-    /* height: 146px; */
-    /* position: absolute; */
-    /* top: 40%; */
-    /* right: 100px; */
-    display: none;
-  }
-
-  /* .blue-bg {
-    background-image: url('./components/images/bluebg.png');
-    background-position: start;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-image: none;
-  } */
-}
-
-.rep-blue-bg {
-  background-image: url('./components/images/bluebg.png');
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
 }
 
 @media (max-width: 800px) {
@@ -194,6 +146,30 @@ body {
   } */
 }
 
+@media (min-width: 1024px) {
+  .invest-bg {
+    background-image: url('./components/images/invest.png');
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 177px;
+    height: 146px;
+    position: absolute;
+    top: 40%;
+    left: 110px;
+  }
+}
+
+/* representative bg */
+/* .rep-blue-bg {
+  background-image: url('./components/images/bluebg.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+} */
+
+/* rep bg image */
 .cto {
   background-image: url('./components//images/cto.png');
   background-position: center;

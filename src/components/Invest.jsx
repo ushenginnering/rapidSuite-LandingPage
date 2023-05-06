@@ -87,7 +87,7 @@ const Invest = () => {
           </div>
         </article>
         {/* btn pagination */}
-        <article className='flex items-center gap-[6.6px] justify-center mt-[58px] mb-[175px]'>
+        <article className='flex items-center gap-[6.6px] justify-center mt-[58px] mb-28 md:mb-[175px]'>
           {invests.map((item, index) => {
             return (
               <button

@@ -36,38 +36,39 @@ const Benefits = () => {
       <p className='uppercase font-normal text-[10px] md:text-base tracking-[0.225em] border rounded-[49px] pt-[7px] bg-[#152032] py-[4px] px-[8px] md:py-[6px] md:pl-[12px] md:pr-[13px] border-[#1393EC]/20 rapid-text mb-[40px]'>
         ENJOY
       </p>
-      <h3 className='faq-text text-2xl md:text-[32px] mb-[60px] text-center font-bold'>
+      <h3 className='faq-text text-xl md:text-[32px] mb-10 md:mb-[60px] text-center font-bold'>
         BENEFITS
       </h3>
 
-      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-x-9 gap-y-14 max-w-[1400px] mx-auto px-6 md:px-16'>
+      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-x-9 gap-y-10 md:gap-y-14 max-w-[1400px] mx-auto px-6 md:px-16'>
         {/* 1st */}
         <article className='rounded-[11px] bg-white/5 border-white/50 border'>
           <img
             src={construction}
             alt=''
-            className='mt-[42px] mx-auto w-[54px] h-[52px] mb-[16px]'
+            className='mt-[42px] mx-auto w-10 md:w-[54px] md:h-[52px] mb-[16px]'
           />
-          <h3 className='faq-text text-center font-bold text-2xl mb-[32px]'>
+          <h3 className='faq-text text-center font-bold text-xl md:text-2xl mb-[32px]'>
             Quickly deploy tools
           </h3>
-          <p className='text-base text-center text-white font-normal leading-relaxed mb-[100px] px-[18px]'>
+          <p className='text-sm md:text-base text-center text-white font-normal leading-relaxed mb-[100px] px-[18px]'>
             Our suite of powerful digital tools is designed to be user-friendly
             and easy to deploy, empowering your school to compete favorably in
             today&apos;s digital world.
           </p>
         </article>
+
         {/* 2nd */}
         <article className='rounded-[11px] bg-white/5 border-white/50 border'>
           <img
             src={school}
             alt=''
-            className='mt-[42px] mx-auto w-[54px] h-[52px] mb-[16px]'
+            className='mt-[42px] mx-auto w-10 md:w-[54px] md:h-[52px] mb-[16px]'
           />
-          <h3 className='school text-center font-bold text-2xl mb-[32px]'>
+          <h3 className='school text-center font-bold text-xl md:text-2xl mb-[32px]'>
             Train Staff
           </h3>
-          <p className='text-base text-center text-white font-normal leading-relaxed mb-[100px] px-[18px]'>
+          <p className='text-sm md:text-base text-center text-white font-normal leading-relaxed mb-[100px] px-[18px]'>
             Rapid Suite, we believe that the key to success in the school
             industry lies in empowering your staff with the right tools and
             training. you can ensure that your staff is educated, confident, and
@@ -75,17 +76,18 @@ const Benefits = () => {
             students
           </p>
         </article>
+
         {/* 3rd */}
         <article className='rounded-[11px] bg-white/5 border-white/50 border'>
           <img
             src={bar_chart}
             alt=''
-            className='mt-[42px] mx-auto w-[54px] h-[52px] mb-[16px]'
+            className='mt-[42px] mx-auto w-10 md:w-[54px] md:h-[52px] mb-[16px]'
           />
-          <h3 className='bar text-center font-bold text-2xl mb-[32px]'>
+          <h3 className='bar text-center font-bold text-xl md:text-2xl mb-[32px]'>
             Manage Growth
           </h3>
-          <p className='text-base text-center text-white font-normal leading-relaxed mb-[100px] px-[18px]'>
+          <p className='text-sm md:text-base text-center text-white font-normal leading-relaxed mb-[100px] px-[18px]'>
             Manage growth with Rapid Suite: our suite of digital tools is
             designed to help your school scale up and achieve your growth
             objectives. With Rapid Suite you can streamline your operations,
