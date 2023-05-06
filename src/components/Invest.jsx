@@ -4,7 +4,7 @@ import nextbtn from '../components/images/navigate_next.png';
 import prevbtn from '../components/images/navigate_prev.png';
 
 const Invest = () => {
-  const [invests, setInvests] = useState(investments);
+  const [invests] = useState(investments);
   const [value, setValue] = useState(0);
 
   const { image, text, subtext, vid } = invests[value];
