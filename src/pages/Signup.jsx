@@ -27,7 +27,7 @@ const Signup = () => {
   };
 
   return (
-    <div className='mb-10'>
+    <div>
       <header className='mb-[51.42px] text-white flex items-center justify-between px-[37px] pt-[31px]'>
         <Link to='/'>
           <img src={logo} alt='' className='w-[54px] h-[38.58px]' />

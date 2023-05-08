@@ -96,12 +96,16 @@ const Header = () => {
             </ul>
 
             <div className=' md:hidden  cursor-pointer'>
-              <button className='text-[#3A95C9] text-base font-semibold hover:text-[#0CE37B] hover:border-b-2 hover:border-[#0CE37B] transition-all duration-300 ease-in-out'>
-                Login
-              </button>
-              <button className='bg-[#3A95C9] text-[#ffffff] py-2 font-semibold  rounded-[10px] px-4 hover:bg-transparent border text-base border-[#3A95C9] transition-all duration-300 ease-in-out'>
-                Sign up
-              </button>
+              <Link to='/login'>
+                <button className='text-[#3A95C9] text-base font-semibold hover:text-[#0CE37B] hover:border-b-2 hover:border-[#0CE37B] transition-all duration-300 ease-in-out'>
+                  Login
+                </button>
+              </Link>
+              <Link to='/register'>
+                <button className='bg-[#3A95C9] text-[#ffffff] py-2 font-semibold  rounded-[10px] px-4 hover:bg-transparent border text-base border-[#3A95C9] transition-all duration-300 ease-in-out'>
+                  Sign up
+                </button>
+              </Link>
             </div>
           </div>
         )}
@@ -111,6 +115,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// flex flex-col w-[230px] h-[600px] mt-8 px-10 right-0 mx-[26px] absolute top-10 justify-center rounded-[10px] bg-white  md:hidden transition
-//           ease-in-out duration-300 text-lg font-medium
