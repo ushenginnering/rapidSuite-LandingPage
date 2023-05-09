@@ -193,13 +193,5 @@ body {
   text-fill-color: transparent;
 }
 
-/* slide */
-.image-slider-container {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
 
-.image-slider
 
