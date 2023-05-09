@@ -24,7 +24,6 @@ const Hero = () => {
         <video
           controls
           muted
-          autoPlay
           loop
           className='mb-[28px] md:mb-2.5 w-full md:w-[500px] md:h-[230px] lg:w-[600px] object-contain lg:h-[346px]'
         >

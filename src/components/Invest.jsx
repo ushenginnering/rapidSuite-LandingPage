@@ -70,7 +70,6 @@ const Invest = () => {
               <video
                 controls
                 muted
-                autoPlay
                 loop
                 className=' w-full lg:w-[408px] lg:h-[290px] xl:w-full'
               >
@@ -84,14 +83,14 @@ const Invest = () => {
               <img
                 src={prevbtn}
                 alt='prev button'
-                className='py-5 px-5 rounded-full hover:bg-transparent transition-all duration-300 ease-in-out  bg-[#1393EC] border border-[#1393EC]'
+                className='px-3 py-3 md:py-5 md:px-5 rounded-full hover:bg-transparent transition-all duration-300 ease-in-out  bg-[#1393EC] border border-[#1393EC]'
               />
             </button>
             <button className='cursor-pointer' onClick={handleNext}>
               <img
                 src={nextbtn}
                 alt='next button'
-                className=' rounded-full hover:bg-transparent transition-all duration-300 ease-in-out  bg-[#1393EC] py-5 px-5 border border-[#1393EC]'
+                className=' rounded-full hover:bg-transparent transition-all duration-300 ease-in-out px-3 py-3 bg-[#1393EC] md:py-5 md:px-5 border border-[#1393EC]'
               />
             </button>
           </div>
