@@ -43,21 +43,21 @@ const Footer = () => {
         {/* social icon */}
         <div className='flex items-center justify-center mb-[31.5px] text-white gap-3.5 md:gap-[76px] px-2'>
           <a
-            href='#'
+            href='https://twitter.com/ush_ventures'
             className='flex text-sm sm:text-xl font-normal items-center gap-1 md:gap-6'
           >
             <img src={twitter} alt='twitter' />
             Twitter
           </a>
           <a
-            href='#'
+            href='https://www.linkedin.com/in/ush-engineering-ventures-145969226/'
             className='flex text-sm sm:text-xl font-normal items-center gap-1 md:gap-6'
           >
             <img src={linkedin} alt='linkedin' />
             Linkedin
           </a>
           <a
-            href='#'
+            href='https://www.facebook.com/ushengineering/'
             className='flex text-base sm:text-xl font-normal items-center gap-1 md:gap-6'
           >
             <img src={facebook} alt='facebook' />

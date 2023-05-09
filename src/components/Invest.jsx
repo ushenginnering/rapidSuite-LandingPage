@@ -34,7 +34,7 @@ const Invest = () => {
               <button
                 key={index}
                 onClick={() => setValue(index)}
-                className={index === value && 'bg-white/20 py-1'}
+                className={index === value && 'bg-white/10 py-1'}
               >
                 <img
                   src={item.image}
@@ -47,7 +47,7 @@ const Invest = () => {
         </article>
 
         {/* info */}
-        <article className='rounded-[11px] mt-[40px] border-white/50 border bg-gradient-to-r from-white/5 to-transparent] '>
+        <article className='rounded-[11px] mt-[40px] border-white/50 border bg-gradient-to-r from-white/5 to-transparent]'>
           <img
             src={image}
             alt=''
@@ -60,17 +60,27 @@ const Invest = () => {
                 {subtext}
               </p>
             </div>
-            <div className=''>
-              <img
+            <div>
+              {/* <img
                 src={vid}
                 alt=''
                 className=' w-full lg:w-[408px] lg:h-[290px] xl:w-full'
-              />
+              /> */}
+
+              <video
+                controls
+                muted
+                autoPlay
+                loop
+                className=' w-full lg:w-[408px] lg:h-[290px] xl:w-full'
+              >
+                <source src={vid} type='video/mp4' />
+              </video>
             </div>
           </div>
 
           <div className='text-center mb-[37px]'>
-            <button className='cursor-pointer mr-[5px]' onClick={handlePrev}>
+            <button className='cursor-pointer mr-[5px] ' onClick={handlePrev}>
               <img
                 src={prevbtn}
                 alt='prev button'

@@ -193,5 +193,6 @@ body {
   text-fill-color: transparent;
 }
 
-
-
+.invest-btn {
+  background-color: palevioletred;
+}

@@ -14,6 +14,8 @@ import student2 from '../src/components/images/student2.png';
 import student3 from '../src/components/images/student3.png';
 import student4 from '../src/components/images/student4.png';
 
+import youtube from '../src/assets/videos/youtube.mp4';
+
 export const slides = [
   { id: 1, img: school1 },
   { id: 2, img: school2 },
@@ -25,11 +27,7 @@ export const slides = [
   { id: 8, img: school8 },
 ];
 
-// invests
-// import img1 from './components/images/investimg1.png';
-// import img2 from './components/images/investimg2.png';
-// import img3 from './components/images/investimg3.png';
-import youtube from './components/images/Youtube player.png';
+// import youtube from './components/images/Youtube player.png';
 
 export const struggles = [
   {
@@ -163,5 +161,3 @@ const investments = [
   },
 ];
 export default investments;
-
-//invest button

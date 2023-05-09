@@ -1,5 +1,5 @@
 // import React from 'react';
-import youtube from './images/Youtube player.png';
+import youtube from '../assets/videos/youtube.mp4';
 
 const Hero = () => {
   return (
@@ -21,11 +21,16 @@ const Hero = () => {
         </button>
       </div>
       <div className='order-1 md:order-2'>
-        <img
-          src={youtube}
-          alt=''
+        <video
+          controls
+          muted
+          autoPlay
+          loop
           className='mb-[28px] md:mb-2.5 w-full md:w-[500px] md:h-[230px] lg:w-[600px] object-contain lg:h-[346px]'
-        />
+        >
+          <source src={youtube} type='video/mp4' />
+        </video>
+
         <p className='hidden md:block font-bold text-xs text-[#B0B8BE] text-center 2xl:text-left'>
           5 distinctive benefit of working with rapid suite
         </p>

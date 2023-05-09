@@ -29,7 +29,11 @@ const Logo = () => {
           {slides.map((slide) => {
             return (
               <div key={slide.id} className='px-[14px] md:px-1 '>
-                <img src={slide.img} alt='' className='object-contain ' />
+                <img
+                  src={slide.img}
+                  alt=''
+                  className='object-contain outline-none '
+                />
               </div>
             );
           })}
