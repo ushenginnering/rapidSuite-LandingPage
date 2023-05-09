@@ -15,6 +15,8 @@ import student3 from '../src/components/images/student3.png';
 import student4 from '../src/components/images/student4.png';
 
 import youtube from '../src/assets/videos/youtube.mp4';
+import video2 from '../src/assets/videos/video2.mp4';
+import video3 from '../src/assets/videos/video3.mp4';
 
 export const slides = [
   { id: 1, img: school1 },
@@ -145,19 +147,19 @@ const investments = [
     image: school4,
     text: 'Emilio Plazza School',
     subtext: `"Since implementing Rapid Suite in our school, we've seen a significant improvement in the way we manage our operations. With Rapid Compiler, we can compile results in minutes and Rapid Driller has been instrumental in helping us conduct CBT and quizzes seamlessly. We're grateful for the impact Rapid Suite has had on our school."`,
-    vid: youtube,
+    video: youtube,
   },
   {
     image: school5,
     text: 'Fountain International High School',
     subtext: `"Before using Paymof, managing our financial records was a nightmare. But with Paymof, we're able to keep track of all our payment records seamlessly. Rapid Suite has been a lifesaver for our school and we're excited to continue using their suite of digital tools."`,
-    vid: youtube,
+    video: video2,
   },
   {
     image: school6,
     text: 'Oak Crest Montessori',
     subtext: `"At Oak Crest Montessori, we've struggled with keeping up with the digital demands of today's world. But with Rapid Web, we were able to create a customized website and blog that has helped us connect with prospective parents and students. We highly recommend Rapid Suite to any school looking to enhance their digital presence."`,
-    vid: youtube,
+    video: video3,
   },
 ];
 export default investments;

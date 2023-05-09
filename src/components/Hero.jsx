@@ -25,7 +25,7 @@ const Hero = () => {
           controls
           muted
           loop
-          className='mb-[28px] md:mb-2.5 w-full md:w-[500px] md:h-[230px] lg:w-[600px] object-contain lg:h-[346px]'
+          className='mb-[28px] md:mb-2.5 w-full md:w-[500px] md:h-[230px] lg:w-[600px] object-contain lg:h-[346px] border-[10px] border-[#0ce37b]/30 rounded-md'
         >
           <source src={youtube} type='video/mp4' />
         </video>

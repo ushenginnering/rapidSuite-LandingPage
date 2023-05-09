@@ -7,7 +7,7 @@ const Invest = () => {
   const [invests] = useState(investments);
   const [value, setValue] = useState(0);
 
-  const { image, text, subtext, vid } = invests[value];
+  const { image, text, subtext, video } = invests[value];
 
   const handleNext = () => {
     setValue((prevValue) => {
@@ -61,20 +61,13 @@ const Invest = () => {
               </p>
             </div>
             <div>
-              {/* <img
-                src={vid}
-                alt=''
-                className=' w-full lg:w-[408px] lg:h-[290px] xl:w-full'
-              /> */}
-
               <video
                 controls
                 muted
                 loop
                 className=' w-full lg:w-[408px] lg:h-[290px] xl:w-full'
-              >
-                <source src={vid} type='video/mp4' />
-              </video>
+                src={video}
+              />
             </div>
           </div>
 
