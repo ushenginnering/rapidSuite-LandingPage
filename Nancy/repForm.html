@@ -15,10 +15,16 @@
     border-radius: 6px;
     border: 10px solid rgba(12, 227, 123, 0.19);
   }
-  @media (max-width:768px) {
-    .form-vid-wrapper{
+  @media (max-width:375px) {
+    .form-vid-wrapper iframe{
       width: 100% !important;
-      height: 100% !important;
+      height: 50vh !important;
+    }
+  }
+  @media (max-width:768px) {
+    .form-vid-wrapper iframe{
+      width: 100%;
+      height: 70vh;
     }
     .gradient{
       font-size: 20px !important;
@@ -93,18 +99,18 @@
             <div class="row mb-3">
               <div class="col-md-6">
                 <label for="first-name" class="pt-4 fw-bold">First Name</label>
-                <input type="text" id="first-name" class="form-control" />
+                <input type="text" id="first-name" class="form-control" placeholder="First Name"/>
               </div>
               <div class="col-md-6">
                 <label for="last-name" class="pt-4 fw-bold">Last Name</label>
-                <input type="text" id="last-name" class="form-control" />
+                <input type="text" id="last-name" class="form-control" placeholder="Last Name"/>
               </div>
             </div>
             <label for="school-name" class="pt-4 fw-bold">School Name</label>
-            <input type="text" id="school-name" class="form-control" />
+            <input type="text" id="school-name" class="form-control" placeholder="School Name"/>
             
             <label for="school-capacity" class="pt-4 fw-bold">School capacity ranges</label>
-            <select id="school-capacity" class="form-select ">
+            <select id="school-capacity" class="form-select" placeholder="School capacity ranges">
               <option value="200-300">100-200</option>
               <option value="200-300">100-300</option>
               <option value="200-300">100-400</option>
@@ -112,7 +118,7 @@
             </select>
             
             <label for="hear-about-us" class="pt-4 fw-bold">How did you hear about us?</label>
-            <input type="text" id="hear-about-us" class="form-control" />
+            <input type="text" id="hear-about-us" class="form-control" placeholder="How did you hear about us"/>
             
             <label for="results" class="pt-4 fw-bold">What results are you trying to create for your school with Rapid suite?</label>
             <textarea id="results" class="form-control" rows="5"></textarea>

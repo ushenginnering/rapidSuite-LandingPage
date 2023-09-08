@@ -74,7 +74,6 @@ text-transform: uppercase;
 }
 
 
-
 /* OTP POPUP PAGE */
 .opt-button{
     background-color:#3A95C9 !important;
@@ -233,16 +232,9 @@ text-transform: uppercase;
     background-color: #3A95C9 !important; 
     border: none !important;
   } 
-  /* .boxes{
-        background: linear-gradient(154.84deg, rgba(255, 255, 255, 0.05) 5.49%, rgba(255, 255, 255, 0.0055) 100%);
-        border-radius: 11px;
-        height: 550px;
-        border: 1px solid #FFFFFF;
-        width: 419px;
-       } */
 
        .boxes{
-        height: 540px;
+        height: 600px;
         flex-shrink: 0;
         color: #FFF;
         border: 1px solid #FFFFFF;
@@ -258,7 +250,6 @@ text-transform: uppercase;
       .boxes-wrapper{
         display: inline-flex;
         align-items: flex-start;
-        /* gap: 55px; */
       }
       .boxes2{
         background: linear-gradient(154.84deg, rgba(255, 255, 255, 0.05) 5.49%, rgba(255, 255, 255, 0.0055) 100%);
@@ -271,23 +262,23 @@ text-transform: uppercase;
       }
       .boxes3{
         border-radius: 11px;
-        height: 250px !important;
-        width: 200px !important;
+        height: 250px ;
+        width: 200px ;
         font-size: 16px !important;
         border: 1px solid #817f7f;
       }
 
       .pricingBox{
         border-radius: 11px;
-        height: 500px !important;
-        width: 25% !important;
+        height: 500px;
+        width: 419px;
         border: 1px solid #ada1a1;
         font-size: 12px;
       }
       .pricingBox-unique{
         border-radius: 11px;
-        height: 900 !important;
-        width: 25% !important;
+        height: 900px;
+        width: 419px;
         border: 1px solid #ada1a1;
         font-size: 12px;
         flex-shrink: 0;
@@ -315,6 +306,24 @@ text-transform: uppercase;
         -text-fill-color: transparent;
         font-size: 40px;
         font-weight: bold;
+      }
+      .problems-wrapper-heading{
+        background: linear-gradient(94deg, #1393EC 25.5%, #FFF 144.28%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .school-heading{
+        background: linear-gradient(101deg, #B2CD08 25.5%, #FFF 104.89%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .bar-heading{
+        background: linear-gradient(93deg, #0CE37B 6.35%, #FFF 105.4%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
       .rep-btn{
         padding: 15px 50px !important;
@@ -589,6 +598,14 @@ text-transform: uppercase;
       border-style:solid ;
       background-color: #152032 !important;
     }
+
+    .footer-section{
+      display: flex !important;
+      flex-direction: row !important;
+      gap: 6em !important;
+      text-align: justify !important;
+    }
+     
     @media(max-width:991px){
     .show-mobile{
         display: block !important;
@@ -605,7 +622,7 @@ text-transform: uppercase;
         outline: none !important;
         box-shadow: none !important;
     }
-        }
+  }
     @media(max-width:789px){
         body{
           background-image: radial-gradient(160px circle at 51% 6%,  #024663, transparent);
@@ -620,11 +637,15 @@ text-transform: uppercase;
           font-size: 20px;
         }
         .footer-section{
-          justify-content: center;
-          align-items: center;
-          flex-wrap: wrap !important;
+        display: flex !important; 
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: justify !important;
         }
-        
+        .social-section{
+          text-align:  center !important;
+        }
+         
         .footer-section li{
           font-size: 18px !important;
         }
@@ -677,12 +698,11 @@ text-transform: uppercase;
           width: 15px !important;
         }
        .benefits-container .benefits-btn{
-        padding:20px  50px !important;
+        padding:15px  50px !important;
        }
-
-       /* .image-caption h4{
-        font-size: 16px !important;
-      } */
+       .image-caption button{
+        width: 80% !important;
+       }
       .schedule-section img{
         display: none !important;
       }
@@ -692,7 +712,6 @@ text-transform: uppercase;
       background-size: cover !important;
       height:  50vh;
       overflow: hidden;
-      /* width: 70vw !important; */
       margin: 0; 
       padding: 0; 
     }
@@ -715,7 +734,11 @@ text-transform: uppercase;
       .benefits-wrapper button{
         width: 35%;
       }
-      
+      .form-vid-wrapper iframe{
+        width: 100%;
+        height: 70vh;
+      }
+     
        
     }
     @media (max-width:776px) {
@@ -763,9 +786,9 @@ text-transform: uppercase;
         padding:  10px 30px !important;
         font-size: 14px !important;
        }
-       .schedule-section button{
+       /* .image-caption button{
         width: 10px 25px !important;
-       }
+       } */
       
       
   }
@@ -786,6 +809,19 @@ text-transform: uppercase;
     .btn-div button{
       width: 100% !important;
     }
+    .pricingBox{
+      border-radius: 11px;
+      height: 500px;
+      width: 300px !important;
+      flex-shrink: 0;
+    }
+    .pricingBox-unique{
+      border-radius: 11px;
+      height: 900px;
+      width: 300px !important;
+      flex-shrink: 0;
+    }
+    
     
    
   }
@@ -807,6 +843,18 @@ text-transform: uppercase;
       }
       .image-wrapper img{
         display: none !important;
+      }
+      .pricingBox{
+        border-radius: 11px;
+        height: 500px;
+        width: 300px !important;
+        flex-shrink: 0;
+      }
+      .pricingBox-unique{
+        border-radius: 11px;
+        height: 900px;
+        width: 300px !important;
+        flex-shrink: 0;
       }
    
   }
@@ -842,8 +890,9 @@ text-transform: uppercase;
         .btn-outline-light, .compiler-btn{
           width: 100%;
         }
-        .schedule-rep-btn{
-          padding: 10px 20px !important;
+        .schedule-section .schedule-rep-btn{
+          width: 100%;
+          padding: 20px 0;
         }
         .btn-div button{
           width: 80% !important;
@@ -857,6 +906,10 @@ text-transform: uppercase;
     } 
 
      @media (max-width:540px) {
+      .image-caption .schedule-rep-btn {
+        width: 50%;
+        height: 20% !important;
+        }
       .gradient-btn{
         width: 60% !important;
         font-size: 12px;
@@ -866,9 +919,6 @@ text-transform: uppercase;
           padding: 5px 23% !important;
           font-size: 14px !important;
           font-size: 12px !important;
-        }
-        .schedule-rep-btn{
-          padding: 10px 20px !important;
         }
         .benefits-wrapper button{
           width: 80%;
@@ -910,6 +960,22 @@ text-transform: uppercase;
         display: flex;
         flex-direction: column;
         text-align: center;
+      }
+      .pricingBox{
+        border-radius: 11px;
+        height: auto !important;
+        width: 250px !important;
+        flex-shrink: 0;
+      }
+      .pricingBox-unique{
+        border-radius: 11px;
+        height: auto !important;
+        width: 250px !important;
+        flex-shrink: 0;
+      }
+      .form-vid-wrapper iframe{
+        width: 100%;
+        height: 50vh;
       }
      
   } 
