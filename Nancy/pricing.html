@@ -12,6 +12,11 @@
     <title>Pricing</title>  
 </head>
 <style>
+  label:hover{
+  color: #0CE37B !important;
+  font-size: 16px;
+  font-weight: 600;
+}
   .trans-btn{
     margin: 0 !important;
   }
@@ -19,6 +24,58 @@
     margin: 0;
     padding: 8px 30px !important;
   }
+
+  .script {
+			display: block;
+			position: relative;
+			padding-left: 45px;
+			margin-bottom: 15px;
+			cursor: pointer;
+			font-size: 20px;
+		}
+	
+		input[type=checkbox] {
+			visibility: hidden !important;
+		}
+   .geekmark {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 20px;
+			width: 20px;
+      border-radius: 5px;
+			border: 3px solid  #ece6e6;
+      border-bottom-width: 1px; 
+      background: rgba(217, 217, 217, 0.00);
+		}
+		
+		.script:hover input ~ .geekmark {
+			background-color: #0CE37B;
+		}
+
+		.script input:checked ~ .geekmark {
+			background-color: #0CE37B;
+		}
+		
+	
+		.geekmark:after {
+			content: "";
+			position: absolute;
+			display: none;
+		}
+	
+		.script input:checked ~ .geekmark:after {
+			display: block;
+		}
+		
+	
+		.script .geekmark:after {
+			left: 6px;
+			bottom: 5px;
+			width: 6px;
+			height: 6px;
+			border-width: 4px 4px 4px 4px;
+		}
  
  @media(width<=280px) {
    .gradient-btn{
@@ -145,28 +202,44 @@
             <p>You can optionally add more products for an additional #900 per child per year.</p>
             <p style="color: gray;">Select from the checkbox</p>
           <div>
-            <div class="d-flex gap-2">
-              <input type="checkbox">
-              <p class="boxes3heading mt-3">Rapid compiler </p>
+            <div class="d-flex gap-2" id="Rapid-compiler">
+              <a href="" class="text-decoration-none">
+                <label class="script text-white"> Rapid compiler 
+                <input type="checkbox">
+                <span class="geekmark"></span>
+                </label>
+              </a>
             </div>
-            <div  class="d-flex gap-2">
-              <input type="checkbox">
-              <p class="mt-3">Rapid web</p>
+            <div  class="d-flex gap-2" id="Rapid-web">
+              <a href="" class="text-decoration-none">
+                <label class="script text-white"> Rapid web 
+                <input type="checkbox">
+                <span class="geekmark"></span>
+                </label>
+              </a>
             </div>
-            <div  class="d-flex gap-2">
+            <div  class="d-flex gap-2" id="Paymoff"> 
+              <a href="" class="text-decoration-none">
+              <label class="script text-white"> Paymoff 
               <input type="checkbox">
-              <p class="mt-3">Paymoff</p>
-            </div>
-            <div class="d-flex gap-2">
+              <span class="geekmark"></span>
+              </label>
+            </a>
+        </div>
+            <div  class="d-flex gap-2" id="Rapid-driller"> 
+              <a href="" class="text-decoration-none">
+              <label class="script text-white">Rapid driller 
               <input type="checkbox">
-              <p class="mt-3">Rapid driller </p>
-            </div>
+              <span class="geekmark"></span>
+              </label>
+            </a>
         </div>
       <div>
         <p class="vidlink">Total #2,100</p>
         <button class="compiler-btn text-white mb-3" style="border-radius: 10px;">Purchase plan now</button>
       </div>
-      </div>
+    </div>
+  </div>
 
 
           <div class="pricingBox col-lg-3 col-md-2 col-sm-6">
@@ -190,7 +263,7 @@
   </div>
     
   <div class="pt-4 mt-4"><hr style="color: #1393ECAD;"></div>
-  <footer class="footer-section pt-4 mt-4">
+  <footer class="footer-section pt-4 mt-4 container">
     <div class="footer-tools text-justify" style="font-size: 20px;">
       <h4><strong>All Tools</strong></h4>
       <ul class="list-unstyled">

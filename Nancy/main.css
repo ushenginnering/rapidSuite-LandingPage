@@ -96,9 +96,12 @@ text-transform: uppercase;
     background-color: #011B33!important;
     border: none !important;
   }
-  .modal-body { 
+
+  .modal-dialog { 
     background-color: #011B33!important;
     border: none !important;
+    width: 250px !important;
+    height: 250px !important;
   }
   .navbar{
     background:#011B33 !important;
@@ -822,7 +825,14 @@ text-transform: uppercase;
       flex-shrink: 0;
     }
     
-    
+    #custom-css{
+      display: flex !important;
+      flex-direction: column !important;
+  }
+  .custom-css-width{
+    width: 100% !important;
+    width: 100% !important;
+  }
    
   }
   @media (min-width: 820px) and (max-width: 912px) {
