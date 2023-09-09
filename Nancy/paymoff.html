@@ -22,21 +22,8 @@
     margin: 0;
     padding: 8px 50px !important;
   }
-  .schedule-section{
-    position: relative;
-  }
- 
-  .image-caption{
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    translate: (-50%, -15%);
-  }
  @media(max-width:768px) {
  
-  .schedule-section img{
-    width: 100%;
-  }
     .rep-btn{
       width: 100%;
     }
@@ -46,18 +33,18 @@
     .image-wrapper{
     display: none;
     }
-    .schedule-rep-btn{
-      padding: 10px 15px !important;
-    }
+    
     .image-caption{
-      align-items: center;
-      padding: 0 5px;
-      padding-top: 2px !important;
-     }
+       align-items: center;
+       padding: 0 5px;
+       padding-top: 400px;
+      }
       .image-caption h4{
         font-size: 20px !important;
       }
-
+      .benefits-container .benefits-btn{
+       width: 90%;
+       }
  }
 </style>
 <body>
@@ -271,16 +258,14 @@
     </div>
   </div>
   <div class="pt-4">
-  <div class="schedule-section pt-4 mt-4">
-    <div class="pt-4 mt-4 schedule-section-img">
-      <img src="images/schedule.png" alt="shedudule-img" class="img-fluid">
+    <div class="schedule-section pt-4 mt-4">
+      <div class="pt-4 mt-4 schedule-section-img">
+        <img src="images/schedule.png" alt="shedudule-img" class="img-fluid schedule">
+        <div class="image-caption"><h4 style="font-size: 32px;" class="pb-2">Schedule your meeting with Rapid Driller representative to get started</h4>
+        <span class=""><a href="repForm.html"><button class="btn-primary schedule-rep-btn border-0 text-white">Speak to a representative</button></span></a>
+      </div>
     </div>
-      <div class="image-caption">
-      <h4 style="font-size: 32px;" class="pb-4">Schedule your meeting with Rapid Driller representative to get started</h4>
-      <span class="pt-4"><button class=" schedule-rep-btn text-white">Speak to a representative</button></span>
     </div>
-  </div>
-  </div>
   <div class="pt-4 mt-4"><hr style="color: #1393ECAD;"></div>
   
   <footer class="footer-section pt-4 mt-4">
