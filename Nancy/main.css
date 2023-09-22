@@ -102,9 +102,12 @@ text-transform: uppercase;
     width: 250px !important;
     height: 250px !important;
   }
-  .navbar{
-    background:#011B33 !important;
-  }
+  .navbar {
+    background: rgba(1, 27, 51, 0.29) !important;
+    backdrop-filter: blur(65.5px) !important;
+    transition: background 0.3s ease-in-out !important;
+}
+
 
   .nav-btn-wrapper .login{
     color: #3A95C9 !important;
@@ -156,9 +159,12 @@ text-transform: uppercase;
     font-size: 40px !important;
     color: white !important;
   }
- /* .navbar-nav.justify-content-between .nav-item {
-    margin-right: 30px; 
-} */
+ 
+.navbar-nav ul li{
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
 
 .navbar-collapse{
     justify-content: space-around !important;
@@ -229,6 +235,7 @@ text-transform: uppercase;
   } 
   .schedule-rep-btn{
     height: 72px;
+    /* width: 40vw; */
     padding: 10px 70px;
     justify-content: center;
     align-items: center;
@@ -343,8 +350,9 @@ text-transform: uppercase;
       }
 
       .btn-outline-light:hover{
-        color: #024663 !important;
+        color: #0CE37B !important;
         transition: .3s ease-in-out;
+        border-color: #0CE37B !important;
       }
 
       .offering-section{
@@ -583,6 +591,8 @@ text-transform: uppercase;
       border-bottom: #0CE37B solid 3px;
       font-size: 20px;
     }
+    
+    /* this part i for box-btn over effects */
    
     .gradient-btn{
       background: var(--short-txt, linear-gradient(138deg, #1393EC 0%, #FFF 100%));
@@ -612,9 +622,6 @@ text-transform: uppercase;
     }
      
     @media(min-width:991px){
-      .navbar .navbar-nav{
-        margin-left: 30px !important;
-      }
   }
     @media(max-width:991px){
     .show-mobile{
@@ -631,6 +638,9 @@ text-transform: uppercase;
         border: 0 !important;
         outline: none !important;
         box-shadow: none !important;
+    }
+    .hero-section img{
+      display: none !important;
     }
   }
     @media(max-width:789px){
@@ -711,7 +721,7 @@ text-transform: uppercase;
         padding:15px  50px !important;
        }
        .image-caption button{
-        width: 80% !important;
+        width: 50vw !important;
        }
       .schedule-section img{
         display: none !important;
@@ -727,12 +737,19 @@ text-transform: uppercase;
     }
     
     
-      .image-caption{
+      /* .image-caption{
        align-items: center;
        padding: 0 5px;
        padding-top: 400px;
-      }
+      } */
      
+      .image-caption {
+        position: absolute;
+        bottom: -25%; 
+        left: 50%; 
+        transform: translate(-50%, 50%); 
+        width: 100%; 
+      }
       .boxes{
         width: 280px;
         height: auto;
@@ -765,8 +782,10 @@ text-transform: uppercase;
       .nav-btn-wrapper{
       display: flex;
       flex-direction: column;
-      /* margin-right: 10px; */
       }
+      .schedule-section h4{
+        font-size: 16px !important;
+    }
       
       .navbar{
         background-color: #011B33 !important;

@@ -1,5 +1,7 @@
 const passwordInput = document.getElementById('passwordInput');
 const togglePassword = document.getElementById('togglePassword');
+const navbar = document.querySelector('.navbar');
+
 
 togglePassword.addEventListener('click', function () {
     const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
@@ -94,6 +96,19 @@ positionSelect.addEventListener("change", function () {
         schoolAccountContainer.style.display = "none";
     }
 });
+
+
+document.addEventListener('scroll', () => {
+    const scrollPos = window.scrollY;
+    const navbarHeight = navbar.offsetHeight;
+    const maxScroll = 200; 
+
+
+    const opacity = Math.min(scrollPos / maxScroll, 1);
+
+    navbar.style.backgroundColor = `rgba(1, 27, 51, ${0.29 + 0.71 * opacity})`;
+});
+
 
 
 
