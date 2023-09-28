@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500&family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Pricing</title>  
+</head>
+<style>
+  .trans-btn{
+    margin: 0 !important;
+  }
+  .rep-btn, .trans-btn{
+    margin: 0;
+    padding: 8px 30px !important;
+  }
+  .schedule-section{
+    position: relative;
+  }
+ 
+  .image-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: (-50%, -50%);
+  }
+ @media(width<=280px) {
+   .gradient-btn{
+    display: none;
+    width:50% !important;
+    font-size: 10px !important;
+  }
+}
+ @media(min-width:800px) {
+   .gradient-btn{
+    width: 30%;
+    font-size: 14px !important;
+  }
+}
+ @media(max-width:768px) {
+  .image-caption h4{
+    font-size: 12px !important;
+  }
+  .schedule-section img{
+    width: 100%;
+  }
+  .image-caption{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    translate: (-40%, -50%);
+  }
+  .image-caption button{
+    padding: 4px 17px !important;
+    margin-bottom: 5px !important;
+  }
+  .gradient-btn{
+      width: 26% !important; 
+      font-size: 12px !important;
+    }
+ }
+  @media(max-width:400px){
+        
+    .gradient-btn{
+      width: 28% !important; 
+      font-size: 12px !important;
+    }
+}
+  @media(min-width:920px){
+        body{
+          background-image: radial-gradient(180px circle at 50% 16%, #0d2833,transparent);  
+          background-repeat: no-repeat;
+        }
+      
+}
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top pt-5">
+    <div class="container-fluid">
+        <div  class="show-mobile hide-desktop"><a class="navbar-brand" href="#"><img src="images/Vector.png" alt="logo"></a></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="show-desktop hide-mobile"><a class="navbar-brand" href="#"><img src="images/Vector.png" alt="logo"></a>
+        </div>
+        <ul class="navbar-nav justify-content-between gap-4">
+          <li class="nav-item pt-2">
+            <a class="nav-link active text-white" aria-current="page" href="http://home.ushmoney.net/">Home</a>
+          </li>
+          <li class="nav-item list-group-item text-white pb-3" data-bs-toggle="modal" data-bs-target="#overlayModal" style="cursor: pointer;">
+            <a href="" class="nav-link active text-white"></a>
+            Products <span><img src="images/expand_more.png" alt="" class="products-overlay"></span>
+          </li>
+          <li class="nav-item pt-2">
+            <a class="nav-link text-white" href="pricing.html">Pricing</a>
+          </li>
+        </ul>
+        <dv class="gap-3 nav-btn-wrapper">
+          <a href="login.html"><button class="btn login" >Login</button></a>
+          <a href="login.html"><button class="btn signup">Sign up</button></a>
+        </div>
+    </div>
+  </nav>
+      <div class="container">
+        <div class="container">
+            <div class="modal fade" id="overlayModal" tabindex="-1" aria-labelledby="overlayModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #011B33 !important;">
+                            <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                            <div class="modal-body">
+                                <ul class="list-unstyled">
+                                  <li class="list-group-item pt-4"><a href="paymoff.html" class="text-white text-decoration-none">Paymoff</a></li>
+                                  <li class="list-group-item pt-4 "><a href="web.html" class="text-white text-decoration-none">Rapid web</a></li>
+                                  <li class="list-group-item pt-4 "><a href="compiler.html" class="text-white text-decoration-none">Rapid compiler</a></li>
+                                  <li class="list-group-item pt-4 "><a href="compiler.html" class="text-white text-decoration-none">Rapid driller</a></li> 
+                                </ul> 
+                            </div>
+                    </div> 
+                </div>
+            </div>
+        </div>  
+        </div>  
+      <div class="mt-5 pt-5">
+        <div class=" hero-section pt-5 mt-5 text-center">
+              <h2 class="heading">OUR PRICING</h2>
+              <div class="container">
+                <div class="row justify-content-between">
+                  <div class="text-center">
+                    <p style="font-weight: bold; font-size: 20px;">Grow Your Business with Sales and Marketing Training</p>
+                    <p style="font-weight: bold; font-size: 20px;">Pay using group packages</p>
+                  </div>
+                </div>
+        </div>
+              
+    
+    <div class="text-center">
+    <div class="container-fluid offering-section text-center pt-4 ">
+      <div class="d-flex flex-column align-items-center">
+        <div class="pb-4"><img src="images/webIcon.png" alt="perk"></div>
+        <h3 class="gradient-btn text-center" style="width: 13%;">PACKAGES</h3>
+      </div>
+
+
+      <div class="row gap-4 justify-content-center pt-lg-5 pb-lg-5 pricingBox-wrapper">
+          <div class="pricingBox col-lg-4 col-md-6 col-sm-12">
+            <img src="images/construction.png" alt="icon" class="pt-5">
+            <h3 class="boxes3heading">Free level</h3>
+            <p class="pt-4">This level is <span class="vidlink"><b>free </span></b>for everyone to use, </p>
+            <p class="gradient2"  style="font-size: 10px; text-transform: lowercase;">but users can make in-app purchases to unlock additional features.</p>
+            <p class="pt-5">This level includes access to the learning center product.</p>
+            <button class="free-btn mb-3">free</button>
+          </div>
+
+
+          <div class="pricingBox-unique col-lg-4 col-md-6 col-sm-12">
+            <img src="images/pricingschool.png" alt="icon" class="pt-5">
+            <h3 class="vidlink">Basic level</h3>
+            <p>This level costs <span class="vidlink"><b>#1200</span></b> per child per year </p>
+            <p>and includes the free level features </p>
+            <p class="">one of any product of your choice from</p>
+            <p>You can optionally add more products for an additional #900 per child per year.</p>
+            <p style="color: gray;">Select from the checkbox</p>
+          <div>
+            <div class="d-flex gap-2">
+              <input type="checkbox">
+              <p class="boxes3heading mt-3">Rapid compiler </p>
+            </div>
+            <div  class="d-flex gap-2">
+              <input type="checkbox">
+              <p class="mt-3">Rapid web</p>
+            </div>
+            <div  class="d-flex gap-2">
+              <input type="checkbox">
+              <p class="mt-3">Paymoff</p>
+            </div>
+            <div class="d-flex gap-2">
+              <input type="checkbox">
+              <p class="mt-3">Rapid driller </p>
+            </div>
+        </div>
+      <div>
+        <p class="vidlink">Total #2,100</p>
+        <button class="compiler-btn text-white mb-3" style="border-radius: 10px;">Purchase plan now</button>
+      </div>
+      </div>
+
+
+          <div class="pricingBox col-lg-4 col-md-6 col-sm-12">
+            <img src="images/pricingbar.png" alt="icon" class="pt-5">
+            <h3 class="vidlink">Total package</h3>
+            <p>No need for paper-based receipt and manual debtors list</p>
+            <p>This level costs <span>#2000</span> per child per year </p>
+            <p>and includes the basic package features </p>
+            <p class="gradient2" style="font-size: 10px; text-transform: lowercase;">Paymoff, Rapid web, and Rapid driller products.</p>
+            <button class="compiler-btn text-white mb-3" style="border-radius: 10px;">Purchase plan now</button>
+          </div>
+        </div>
+    </div>
+    
+  <div class="container text-justify">
+    <p style="line-height: 250.3% !important; font-size: 20px">The pricing plan is designed to offer flexibility and value to users who want to access the different software
+    products. Users can start with the free level and upgrade to the basic or total package as they need more
+    features. The basic and total packages are priced competitively to make them affordable for users, especially
+    those who pay for multiple children. The pricing plan is also designed to incentivize users to add more
+   products by offering them a lower price for each additional product they choose.</p>
+  </div>
+    
+  <div class="pt-4 mt-4"><hr style="color: #1393ECAD;"></div>
+  <footer class="footer-section pt-4 mt-4">
+    <div class="container pt-4">
+      <div class="row gap-lg-5 gap-md-4">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-tools" style="font-size: 20px;">
+            <h4><strong>All Tools</strong></h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Paymoff</a></li>
+              <li><a href="web.html" class="text-white text-decoration-none">Rapid web</a></li>
+              <li><a href="diller.html" class="text-white text-decoration-none">Rapid driller</a></li>
+              <li><a href="compiler.html" class="text-white text-decoration-none">Rapid compiler</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-tools" style="font-size: 20px;">
+            <h4><strong>Links</strong></h4>
+            <ul class="list-unstyled">
+              <li><a href="http://home.ushmoney.net/" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="pricing.html" class="text-white text-decoration-none">Pricing</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Learning Center</a></li>
+              <li><a href="repForm.html" class="text-white text-decoration-none">Contact Representative</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-tools">
+            <p style="font-size: 16px;">COPYRIGHT: ushengineering @2023</p>
+            <div class="d-flex align-items-center">
+              <img src="images/Vector.png" alt="logo" class="logo pb-2">
+              <p style="color: gray;">Powered by ush</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="social-section d-flex gap-4 pt-4 mt-4 container">
+    <div class="d-flex gap-2"><img src="images/square-twitter.svg" alt="" class="" width="20"><li class="list-unstyled">Twitter</li></div>
+    <div class="d-flex gap-2"><img src="images/LinkedIn.png" alt="LinkedIn" class="img-fluid"><li class="list-unstyled">LinkedIn</li></div>
+    <a href="https://www.facebook.com/ushengineering" target="_blank" class="text-decoration-none text-white">
+      <div class="d-flex gap-2">
+        <img src="images/fb.png" alt="" class="img-fluid">
+        <li class="list-unstyled">Facebook</li>
+      </div>
+    </a>
+  </div>
+</footer>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
