@@ -10,7 +10,8 @@ const Header = () => {
   const handleNavToggle = () => {
     setIsNavOpen((currNav) => !currNav);
   };
-
+  console.trace(isNavOpen);
+  console.time("something");
   const closeNav = () => {
     setIsNavOpen(false);
   };
@@ -93,12 +94,15 @@ const Header = () => {
                 </a>
               </li>
               <li className="transition-all duration-300 ease-in-out">
-                <a onClick={closeNav} href="#products">
+                <a onClick={closeNav} href="#rapid">
                   Products
                 </a>
               </li>
               <li className=" text-lg  transition-all duration-300 ease-in-out">
-                <a onClick={closeNav} href="#pricing">
+                <a
+                  onClick={closeNav}
+                  href="https://rapidsuite.ng/Pages/pricing.html"
+                >
                   Pricing
                 </a>
               </li>
