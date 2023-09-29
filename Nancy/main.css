@@ -2,7 +2,7 @@ body{
   background-color: #011B33 !important;
   font-family: 'Montserrat', sans-serif;
   color: white !important;
-  background-image: radial-gradient(250px circle at 73% 7%, #04384e, transparent);
+  /* background-image: radial-gradient(250px circle at 73% 7%, #04384e, transparent); */
   background-repeat: no-repeat;
 }
 p{
@@ -282,14 +282,14 @@ text-transform: uppercase;
 
       .pricingBox{
         border-radius: 11px;
-        height: 500px;
+        /* height: 500px; */
         width: 419px;
         border: 1px solid #ada1a1;
         font-size: 12px;
       }
       .pricingBox-unique{
         border-radius: 11px;
-        height: 900px;
+        /* height: 800px; */
         width: 419px;
         border: 1px solid #ada1a1;
         font-size: 12px;
@@ -302,6 +302,12 @@ text-transform: uppercase;
         -webkit-text-fill-color: transparent;
       }
      
+      .pricing-btn{
+        background: #3A95C9 !important;
+        padding: 10px 40px !important;
+        border: none;
+        font-size: 20px;
+      }
       .free-btn{
         padding: 8px 80px !important;
         background-color:#052536;
@@ -838,13 +844,13 @@ text-transform: uppercase;
     }
     .pricingBox{
       border-radius: 11px;
-      height: 500px;
+      /* height: 400px; */
       width: 300px !important;
       flex-shrink: 0;
     }
     .pricingBox-unique{
       border-radius: 11px;
-      height: 900px;
+      /* height: 700px; */
       width: 300px !important;
       flex-shrink: 0;
     }
@@ -971,6 +977,14 @@ text-transform: uppercase;
         }
       
     } 
+  @media (min-width:1240px) {
+    .pricingBox-unique{
+      height: 750px !important;
+    }
+    .pricingBox{
+      height: 520px;
+    }
+    }
   @media (max-width:380px) {
     .footer-section{
       display: flex;

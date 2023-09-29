@@ -14,6 +14,14 @@
 </head>
 <style>
 
+.vid-modal-content{
+  width: 100vw !important;
+  height: 100vh !important;
+}
+.modal-fullscreen{
+  width: 100vw !important;
+  height: 100vh !important;
+}
 .video-container {
   position: relative;
   padding-bottom: 56.25%; 
@@ -25,7 +33,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw !important;
   height: 80%;
 }
 
@@ -45,15 +53,15 @@
     }
 
 </style>
-<body><body class="">
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top pt-5">
+ <body class="">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
     <div class="container-fluid">
-        <div  class="show-mobile hide-desktop"><a class="navbar-brand" href="#"><img src="/Nancy/images/Vector.png" alt="logo"></a></div>
+        <div  class="show-mobile hide-desktop"><a class="navbar-brand" href="#"><img src="images/Vector.png" alt="logo"></a></div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <ion-icon name="menu"></ion-icon>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <div class="show-desktop hide-mobile"><a class="navbar-brand" href="#"><img src="/Nancy/images/Vector.png" alt="logo"></a>
+        <div class="show-desktop hide-mobile"><a class="navbar-brand" href="#"><img src="images/Vector.png" alt="logo"></a>
         </div>
         <ul class="navbar-nav justify-content-between gap-4">
           <li class="nav-item pt-2">
@@ -61,41 +69,39 @@
           </li>
           <li class="nav-item list-group-item text-white pb-3" data-bs-toggle="modal" data-bs-target="#overlayModal" style="cursor: pointer;">
             <a href="" class="nav-link active text-white"></a>
-            Products <span><img src="/images/expand_more.png" alt="" class="products-overlay"></span>
+            Products <span><img src="images/expand_more.png" alt="" class="products-overlay"></span>
           </li>
           <li class="nav-item pt-2">
             <a class="nav-link text-white" href="pricing.html">Pricing</a>
           </li>
         </ul>
-        <dv class="gap-3 nav-btn-wrapper">
+        <div class="gap-3 nav-btn-wrapper">
           <a href="login.html"><button class="btn login" >Login</button></a>
           <a href="login.html"><button class="btn signup">Sign up</button></a>
         </div>
       </div>
     </div>
   </nav>
-    </div>
-      <div class="container">
-        <div class="container">
-            <div class="modal fade" id="overlayModal" tabindex="-1" aria-labelledby="overlayModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header" style="background-color: #011B33 !important;">
-                            <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="container">
+    <div class="container">
+        <div class="modal fade" id="overlayModal" tabindex="-1" aria-labelledby="overlayModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: #011B33 !important;">
+                        <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                        <div class="modal-body">
+                            <ul class="list-unstyled">
+                              <li class="list-group-item pt-4"><a href="paymoff.html" class="text-white text-decoration-none">Paymoff</a></li>
+                              <li class="list-group-item pt-4 "><a href="web.html" class="text-white text-decoration-none">Rapid web</a></li>
+                              <li class="list-group-item pt-4 "><a href="compiler.html" class="text-white text-decoration-none">Rapid compiler</a></li>
+                              <li class="list-group-item pt-4 "><a href="diller.html" class="text-white text-decoration-none">Rapid driller</a></li> 
+                            </ul> 
                         </div>
-                            <div class="modal-body">
-                                <ul class="list-unstyled">
-                                  <li class="list-group-item pt-4"><a href="paymoff.html" class="text-white text-decoration-none">Paymoff</a></li>
-                                  <li class="list-group-item pt-4 "><a href="web.html" class="text-white text-decoration-none">Rapid web</a></li>
-                                  <li class="list-group-item pt-4 "><a href="compiler.html" class="text-white text-decoration-none">Rapid compiler</a></li>
-                                  <li class="list-group-item pt-4 "><a href="compiler.html" class="text-white text-decoration-none">Rapid driller</a></li> 
-                                </ul> 
-                            </div>
-                    </div> 
-                </div>
+                </div> 
             </div>
-        </div>   
-
+        </div>
+    </div>
     <div class="container pt-5">
     <div class="pt-4 container pt-5 mt-5">
     <div class="text-center pt-4 pb-4 container">
@@ -161,15 +167,18 @@
   </div>
 </div>
 
-<!-- Video Modal --><div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content">
+<!-- Video Modal -->
+
+
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content vid-modal-content">
       <div class="modal-header">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="video-container">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/hHyjkIX0E2g" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/hHyjkIX0E2g" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
