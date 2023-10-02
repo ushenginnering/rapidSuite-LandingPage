@@ -114,8 +114,14 @@ document.addEventListener('scroll', () => {
 
 
 
+function move(){
+  window.location.href = "https://rapidsuite.ng"; 
+}
 
 
+function opt(){
+  window.location.href = "OPT.html"; 
+}
 
 
 

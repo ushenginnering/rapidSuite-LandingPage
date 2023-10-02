@@ -92,7 +92,7 @@
 }
  @media(max-width:768px) {
   .gradient-btn{
-      width: 26% !important; 
+      width: 36% !important; 
       font-size: 12px !important;
     }
     
@@ -111,64 +111,78 @@
         }
       
 }
+
+/* Add a default box shadow to the pricing boxes */
+.pricingBox,
+.pricingBox-unique {
+  transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Define the shadow properties for the hover effect */
+.pricingBox:hover,
+.pricingBox-unique:hover {
+  box-shadow: 0 0 10px rgba(233, 229, 229, 0.3); /* Customize the shadow color and size as needed */
+}
+
 </style>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top pt-5">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top pt-3 pb-3">
     <div class="container-fluid">
-        <div  class="show-mobile hide-desktop"><a class="navbar-brand" href="#"><img src="images/Vector.png" alt="logo"></a></div>
+        <div  class="show-mobile hide-desktop"><a class="navbar-brand" href="https://rapidsuite.ng"><img src="images/Vector.png" alt="logo"></a></div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <ion-icon name="menu"></ion-icon>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <div class="show-desktop hide-mobile"><a class="navbar-brand" href="#"><img src="images/Vector.png" alt="logo"></a>
         </div>
-            <ul class="navbar-nav justify-content-between gap-4">
-              <li class="nav-item pt-2 list-group-item">
-                <a class="nav-link active text-white"  href="http://home.ushmoney.net/">Home</a>
-              </li>
-              <li class="nav-item list-group-item pb-3" data-bs-toggle="modal" data-bs-target="#overlayModal" style="cursor: pointer;">
-                <a href="" class="nav-link active"></a>
-                Products <span><img src="images/expand_more.png" alt="" class="products-overlay"></span>
-              </li>
-              <li class="nav-item pt-2">
-                <a class="nav-link text-white" href="pricing.html">Pricing</a>
-              </li>
-            </ul>
+        <ul class="navbar-nav justify-content-between gap-4">
+          <li class="nav-item pt-2">
+            <a class="nav-link active text-white" aria-current="page" href="https://rapidsuite.ng">Home</a>
+          </li>
+          <li class="nav-item list-group-item text-white pb-3" data-bs-toggle="modal" data-bs-target="#overlayModal" style="cursor: pointer;">
+            <a href="" class="nav-link active text-white"></a>
+            Products <span><img src="images/expand_more.png" alt="" class="products-overlay"></span>
+          </li>
+          <li class="nav-item pt-2">
+            <a class="nav-link text-white" href="pricing.html">Pricing</a>
+          </li>
+        </ul>
         <dv class="gap-3 nav-btn-wrapper">
           <a href="login.html"><button class="btn login" >Login</button></a>
           <a href="login.html"><button class="btn signup">Sign up</button></a>
         </div>
+      </div>
     </div>
   </nav>
-      <div class="container">
-        <div class="container">
-            <div class="modal fade" id="overlayModal" tabindex="-1" aria-labelledby="overlayModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header" style="background-color: #011B33 !important;">
-                            <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                            <div class="modal-body">
-                                <ul class="list-unstyled">
-                                  <li class="list-group-item pt-4"><a href="paymoff.html" class="text-white text-decoration-none">Paymoff</a></li>
-                                  <li class="list-group-item pt-4 "><a href="web.html" class="text-white text-decoration-none">Rapid web</a></li>
-                                  <li class="list-group-item pt-4 "><a href="compiler.html" class="text-white text-decoration-none">Rapid compiler</a></li>
-                                  <li class="list-group-item pt-4 "><a href="compiler.html" class="text-white text-decoration-none">Rapid driller</a></li> 
-                                </ul> 
-                            </div>
-                    </div> 
+  <div class="container">
+      <div class="modal fade" id="overlayModal" tabindex="-1" aria-labelledby="overlayModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <!--- 
+                <div class="modal-header" style="background-color: #011B33 !important;">
+                    <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </div>
-        </div>  
-        </div>  
+                ---->
+                    <div class="modal-body">
+                        <ul class="list-unstyled">
+                          <li class="list-group-item pt-4"><a href="paymoff.html" class="text-white text-decoration-none">Paymoff</a></li>
+                          <li class="list-group-item pt-4 "><a href="web.html" class="text-white text-decoration-none">Rapid web</a></li>
+                          <li class="list-group-item pt-4 "><a href="compiler.html" class="text-white text-decoration-none">Rapid compiler</a></li>
+                          <li class="list-group-item pt-4 "><a href="driller.html" class="text-white text-decoration-none">Rapid driller</a></li> 
+                        </ul> 
+                    </div>
+            </div> 
+        </div>
+    </div>
+        
+        
       <div class="mt-5 pt-5">
         <div class=" hero-section pt-5 mt-5 text-center">
-              <h2 class="heading">OUR PRICING</h2>
-              <div class="container">
+          <h1 class="heading pt-2" style="font-size: 54px;">Our Pricing</h1>
+              <div class="container mt-3">
                 <div class="row justify-content-between">
                   <div class="text-center">
-                    <p style="font-weight: bold; font-size: 20px;">Grow Your Business with Sales and Marketing Training</p>
-                    <p style="font-weight: bold; font-size: 20px;">Pay using group packages</p>
+                    <p style="font-weight: bold; font-size: 20px;">Choose what packages works best for you.</p>
                   </div>
                 </div>
         </div>
@@ -176,36 +190,35 @@
     
     <div class="text-center">
     <div class="container-fluid offering-section text-center pt-4 ">
-      <div class="d-flex flex-column align-items-center">
+      <div class="d-flex flex-column align-items-center  mb-3">
         <div class="pb-4"><img src="images/webIcon.png" alt="perk"></div>
         <h3 class="gradient-btn text-center" style="width: 13%;">PACKAGES</h3>
       </div>
 
 
       <div class="row gap-4 justify-content-center pt-lg-5 pb-lg-5 pricingBox-wrapper">
-          <div class="pricingBox col-lg-3 col-md-2 col-sm-6">
+          <div class="pricingBox col-lg-3 col-md-2 col-sm-6 ">
             <img src="images/construction.png" alt="icon" class="pt-5">
-            <h3 class="boxes3heading">Free level</h3>
+            <h3 class="boxes3heading mt-3">Free level</h3>
             <p class="pt-4">This level is <span class="vidlink"><b>free </span></b>for everyone to use, </p>
             <p class="gradient2"  style="font-size: 10px; text-transform: lowercase;">but users can make in-app purchases to unlock additional features.</p>
-            <p class="pt-5">This level includes access to the learning center product.</p>
+            <p class="pt-3">This level includes access to the learning center product.</p>
             <button class="free-btn mb-3">free</button>
           </div>
 
 
           <div class="pricingBox-unique col-lg-3 col-md-2 col-sm-6">
             <img src="images/pricingschool.png" alt="icon" class="pt-5">
-            <h3 class="vidlink">Basic level</h3>
-            <p>This level costs <span class="vidlink"><b>#1200</span></b> per child per year </p>
-            <p>and includes the free level features </p>
-            <p class="">one of any product of your choice from</p>
-            <p>You can optionally add more products for an additional #900 per child per year.</p>
-            <p style="color: gray;">Select from the checkbox</p>
+            <h3 class="boxes3heading mt-3">Basic level</h3>
+            <p>This level starts with <span class="vidlink">#1500</span> per child per year </p>
+            <p>which gives you access to at least 1 of our premium software tools</p> 
+            <p>Optionally, you can add more products for an additional #900 per child per year.</p>
+            <p  class="mt-3 vidlink ">Select from the checkbox</p>
           <div>
             <div class="d-flex gap-2" id="Rapid-compiler">
               <a href="" class="text-decoration-none">
                 <label class="script text-white"> Rapid compiler 
-                <input type="checkbox">
+                <input type="checkbox" checked = "checked">
                 <span class="geekmark"></span>
                 </label>
               </a>
@@ -235,7 +248,7 @@
             </a>
         </div>
       <div>
-        <p class="vidlink">Total #2,100</p>
+        <p class="vidlink align-left">Total: <b></b>#2,100</b></p>
         <button class="compiler-btn text-white mb-3" style="border-radius: 10px;">Purchase plan now</button>
       </div>
     </div>
@@ -244,10 +257,9 @@
 
           <div class="pricingBox col-lg-3 col-md-2 col-sm-6">
             <img src="images/pricingbar.png" alt="icon" class="pt-5">
-            <h3 class="vidlink">Total package</h3>
-            <p>No need for paper-based receipt and manual debtors list</p>
-            <p>This level costs <span>#2000</span> per child per year </p>
-            <p>and includes the basic package features </p>
+            <h3 class="vidlink mt-3">Total package</h3>
+            <p>No hassel, for just  <span>#2000</span> per child per year </p>
+            <p>you would have full access to all our free and premium products </p>
             <p class="gradient2" style="font-size: 10px; text-transform: lowercase;">Paymoff, Rapid web, and Rapid driller products.</p>
             <button class="compiler-btn text-white mb-3" style="border-radius: 10px;">Purchase plan now</button>
           </div>
@@ -263,6 +275,8 @@
   </div>
     
   <div class="pt-4 mt-4"><hr style="color: #1393ECAD;"></div>
+
+
   <footer class="footer-section pt-4 mt-4 container">
     <div class="footer-tools text-justify" style="font-size: 20px;">
       <h4><strong>All Tools</strong></h4>
@@ -300,7 +314,7 @@
 <!-- </div> -->
 </footer>
 
-  <div class="social-section d-flex gap-4 pt-4 mt-4 container">
+  <div class="social-section d-flex gap-4 pt-2  pb-4 container">
     <div class="d-flex gap-2"><img src="images/square-twitter.svg" alt="" class="" width="20"><li class="list-unstyled">Twitter</li></div>
     <div class="d-flex gap-2"><img src="images/LinkedIn.png" alt="" class="img-fluid"><li class="list-unstyled">LinkedIn</li></div>
     <a href="https://www.facebook.com/ushengineering" target="_blank" class="text-decoration-none text-white">
